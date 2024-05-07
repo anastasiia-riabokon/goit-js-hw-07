@@ -38,8 +38,11 @@ function photosTemplate(arr) {
 }
 
 const markup = photosTemplate(images);
-console.log(markup);
 
 const galleryList = document.querySelector('.gallery');
 
 galleryList.insertAdjacentHTML('afterbegin', markup);
+
+galleryList
+  .querySelectorAll('li')
+  .forEach(item => item.classList.add('gallery-item'));
