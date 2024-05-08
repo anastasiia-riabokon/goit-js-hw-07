@@ -11,6 +11,7 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  background-color: #fff;
 }
 
 ul {
@@ -31,6 +32,10 @@ h6 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   display: block;
   width: 100%;
@@ -38,6 +43,57 @@ img {
   height: 100%;
 }
 
+/* #region  task1*/
+#categories {
+  max-width: 440px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item {
+  border-radius: 8px;
+  background-color: #f6f6fe;
+  padding: 16px;
+}
+
+.item h2 {
+  color: #2e2f42;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33; /* 133.333% */
+  letter-spacing: 0.06rem;
+
+  margin-bottom: 16px;
+}
+
+.item ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item ul li {
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+
+  border-radius: 4px;
+  border: 1px solid #808080;
+
+  border-radius: 8px;
+  background-color: #fff;
+
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+}
+/* #endregion  */
+
+/* #region  task2*/
 .gallery {
   display: flex;
   justify-content: center;
@@ -48,10 +104,132 @@ img {
   max-width: 1440px;
 
   padding: 100px 156px;
-  border: 2px dashed #18a079;
 }
 
 .gallery-item {
   flex-basis: calc((100% - 75px) / 3);
   height: 300px;
 }
+/* #endregion  */
+
+input {
+  width: 360px;
+  height: 40px;
+
+  padding: 8px 16px;
+
+  border-radius: 4px;
+  border: 1px solid #808080;
+
+  outline: none;
+
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+}
+
+input:hover,
+input:focus {
+  border: 1px solid #000;
+}
+
+/* #region  task3*/
+
+#name-input {
+  margin-bottom: 16px;
+}
+
+#name-input:placeholder-shown {
+  color: #2e2f42;
+  font-size: 16px;
+  letter-spacing: 0.04rem;
+}
+
+h1 {
+  color: #2e2f42;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33; /* 133.333% */
+  letter-spacing: 0.06rem;
+}
+/* #endregion  */
+
+/* #region  task4*/
+.login-form input {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.login-form label {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+}
+
+/* #endregion  */
+
+button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+/* #region  task5*/
+.widget {
+  padding: 100px 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+  margin-top: 0;
+}
+/* #endregion  */
+
+/* #region  task6*/
+#controls,
+#boxes {
+  display: flex;
+  padding: 32px;
+  gap: 16px;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+
+  max-width: 486px;
+}
+
+#controls {
+  margin-bottom: 16px;
+}
+
+#controls input {
+  width: 150px;
+}
+
+button[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+button[data-destroy]:hover {
+  background-color: #ff7070;
+}
+/* #endregion  */
