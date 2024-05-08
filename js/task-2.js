@@ -28,8 +28,8 @@ const images = [
 function photoTemplate(obj) {
   return `<li>
     <img
-      src = ${obj.url} 
-      alt= ${obj.alt}/>
+      src = "${obj.url}" 
+      alt= "${obj.alt}"/>
   </li>`;
 }
 

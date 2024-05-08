@@ -13,10 +13,16 @@ body {
   line-height: 1.5;
 }
 
-li {
+ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .gallery {
@@ -33,6 +39,6 @@ li {
   border: 2px dashed #18a079;
 }
 
-.gallery-item img {
-  max-width: 320px;
+.gallery-item {
+  width: calc((100% - 30px) / 3);
 }
