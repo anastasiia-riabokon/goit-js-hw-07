@@ -19,14 +19,16 @@ function createBoxes(amount) {
 
   ref.divBoxes.innerHTML = '';
 
+  let divCollection = [];
   for (let i = 0; i < amount; i += 1) {
     const divElement = document.createElement('div');
     const size = 30 + i * 10;
     divElement.style.width = `${size}px`;
     divElement.style.height = `${size}px`;
     divElement.style.backgroundColor = getRandomHexColor();
-    ref.divBoxes.appendChild(divElement);
+    divCollection.push(divElement);
   }
+  ref.divBoxes.append(...divCollection);
   ref.input.value = '';
 }
 
